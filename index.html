@@ -49,7 +49,7 @@
             background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.8'/%3E%3C/svg%3E");
         }
 
-        /* NAVIGATION */
+        /* NAVBAR */
 
         nav {
             position: fixed;
@@ -59,13 +59,17 @@
             width: 92%;
             max-width: 1250px;
             padding: 15px 22px;
+
             display: flex;
             align-items: center;
             justify-content: space-between;
+
             background: rgba(20, 20, 20, 0.85);
             backdrop-filter: blur(15px);
+
             border: 1px solid #333;
             border-radius: 15px;
+
             z-index: 100;
         }
 
@@ -99,12 +103,12 @@
             color: #ffdc00;
         }
 
-        /* NEW RESUME NAV BUTTON */
+        /* RESUME NAV BUTTON */
 
         .resume-nav {
             background: #ffdc00;
             color: #0b0b0b !important;
-            padding: 10px 15px;
+            padding: 10px 16px;
             border: 2px solid #ffdc00;
         }
 
@@ -119,11 +123,14 @@
             min-height: 100vh;
             max-width: 1250px;
             margin: auto;
+
             padding: 160px 5% 100px;
+
             display: grid;
             grid-template-columns: 1.3fr .7fr;
             align-items: center;
             gap: 70px;
+
             position: relative;
         }
 
@@ -188,12 +195,12 @@
             color: #ffdc00;
         }
 
-        /* NEW RESUME BUTTON */
+        /* RESUME BUTTON */
 
         .resume-btn {
-            background: #ffffff;
+            background: white;
             color: #0b0b0b;
-            border-color: #ffffff;
+            border-color: white;
         }
 
         .resume-btn:hover {
@@ -202,14 +209,18 @@
             border-color: #ffdc00;
         }
 
-        /* PROFILE */
+        /* PROFILE CARD */
 
         .profile-card {
             position: relative;
+
             background: #151515;
             border: 1px solid #333;
+
             padding: 25px;
+
             transform: rotate(3deg);
+
             transition: .5s;
         }
 
@@ -219,13 +230,17 @@
 
         .profile-image {
             height: 400px;
+
             display: flex;
             align-items: center;
             justify-content: center;
+
             background:
                 linear-gradient(135deg, #ffdc00 0 20%, transparent 20%),
                 #111;
+
             border: 1px solid #444;
+
             font-size: 90px;
             font-weight: 900;
             color: #ffdc00;
@@ -252,6 +267,7 @@
             border-top: 1px solid #333;
             border-bottom: 1px solid #333;
             padding: 20px 0;
+
             color: #ffdc00;
             font-weight: 900;
             font-size: 18px;
@@ -263,6 +279,7 @@
         }
 
         @keyframes marquee {
+
             from {
                 transform: translateX(0);
             }
@@ -270,6 +287,7 @@
             to {
                 transform: translateX(-50%);
             }
+
         }
 
         /* SECTIONS */
@@ -365,10 +383,12 @@
         .project {
             border-top: 1px solid #333;
             padding: 35px 0;
+
             display: grid;
             grid-template-columns: 100px 1fr auto;
             align-items: center;
             gap: 30px;
+
             transition: .3s;
         }
 
@@ -420,7 +440,9 @@
             content: "";
             width: 12px;
             height: 12px;
+
             background: #ffdc00;
+
             position: absolute;
             left: -42px;
             top: 5px;
@@ -447,6 +469,7 @@
         .contact-box {
             border: 1px solid #333;
             padding: 60px;
+
             background:
                 linear-gradient(
                     135deg,
@@ -485,6 +508,20 @@
             border-color: #ffdc00;
         }
 
+        /* RESUME CONTACT BUTTON */
+
+        .resume-contact {
+            background: #ffdc00 !important;
+            color: #111 !important;
+            border-color: #ffdc00 !important;
+            font-weight: 900;
+        }
+
+        .resume-contact:hover {
+            background: transparent !important;
+            color: #ffdc00 !important;
+        }
+
         /* FOOTER */
 
         footer {
@@ -492,8 +529,10 @@
             padding: 30px 5%;
             max-width: 1250px;
             margin: auto;
+
             display: flex;
             justify-content: space-between;
+
             color: #555;
             font-size: 13px;
         }
@@ -557,6 +596,7 @@
                 grid-column: 2;
                 width: max-content;
             }
+
         }
 
         @media(max-width: 500px) {
@@ -598,9 +638,11 @@
                 flex-direction: column;
                 gap: 10px;
             }
+
         }
 
     </style>
+
 </head>
 
 <body>
@@ -637,9 +679,10 @@
                 <a href="#contact">Contact</a>
             </li>
 
-            <!-- NEW RESUME BUTTON -->
+            <!-- RESUME BUTTON -->
+
             <li>
-                <a href="Pavan_Sai_Resume.pdf"
+                <a href="resume.pdf"
                    class="resume-nav"
                    target="_blank">
                     RESUME ↗
@@ -649,6 +692,7 @@
         </ul>
 
     </nav>
+
 
     <!-- HERO -->
 
@@ -676,8 +720,9 @@
                     VIEW WORK
                 </a>
 
-                <!-- NEW LARGE RESUME BUTTON -->
-                <a href="Pavan_Sai_Resume.pdf"
+                <!-- RESUME BUTTON -->
+
+                <a href="resume.pdf"
                    class="btn resume-btn"
                    target="_blank">
                     VIEW RESUME ↗
@@ -690,6 +735,7 @@
             </div>
 
         </div>
+
 
         <div class="profile-card">
 
@@ -713,6 +759,7 @@
 
     </header>
 
+
     <!-- MARQUEE -->
 
     <div class="marquee">
@@ -728,6 +775,7 @@
         </div>
 
     </div>
+
 
     <!-- ABOUT -->
 
@@ -759,6 +807,7 @@
 
             </div>
 
+
             <div class="about-card">
 
                 <h3>
@@ -776,6 +825,7 @@
         </div>
 
     </section>
+
 
     <!-- SKILLS -->
 
@@ -826,6 +876,7 @@
 
     </section>
 
+
     <!-- PROJECTS -->
 
     <section id="projects" class="projects reveal">
@@ -839,17 +890,24 @@
             <span style="color:#ffdc00">WORK.</span>
         </h2>
 
+
         <div class="project">
 
-            <div class="project-number">01</div>
+            <div class="project-number">
+                01
+            </div>
 
             <div>
-                <h3>Personal Portfolio</h3>
+
+                <h3>
+                    Personal Portfolio
+                </h3>
 
                 <p>
                     A modern responsive portfolio website
                     built using HTML, CSS and JavaScript.
                 </p>
+
             </div>
 
             <a href="#" class="project-link">
@@ -858,17 +916,24 @@
 
         </div>
 
+
         <div class="project">
 
-            <div class="project-number">02</div>
+            <div class="project-number">
+                02
+            </div>
 
             <div>
-                <h3>Hotel Website</h3>
+
+                <h3>
+                    Hotel Website
+                </h3>
 
                 <p>
                     A stylish hotel website concept with
                     responsive layouts and modern UI.
                 </p>
+
             </div>
 
             <a href="#" class="project-link">
@@ -877,17 +942,24 @@
 
         </div>
 
+
         <div class="project">
 
-            <div class="project-number">03</div>
+            <div class="project-number">
+                03
+            </div>
 
             <div>
-                <h3>Python Projects</h3>
+
+                <h3>
+                    Python Projects
+                </h3>
 
                 <p>
                     Programming projects focused on Python,
                     OOP and data processing.
                 </p>
+
             </div>
 
             <a href="#" class="project-link">
@@ -896,17 +968,24 @@
 
         </div>
 
+
         <div class="project">
 
-            <div class="project-number">04</div>
+            <div class="project-number">
+                04
+            </div>
 
             <div>
-                <h3>Data Structures</h3>
+
+                <h3>
+                    Data Structures
+                </h3>
 
                 <p>
                     C implementations of stacks, queues,
                     sorting algorithms and other concepts.
                 </p>
+
             </div>
 
             <a href="#" class="project-link">
@@ -916,6 +995,7 @@
         </div>
 
     </section>
+
 
     <!-- JOURNEY -->
 
@@ -929,6 +1009,7 @@
             MY<br>
             <span style="color:#ffdc00">JOURNEY.</span>
         </h2>
+
 
         <div class="timeline">
 
@@ -950,6 +1031,7 @@
 
             </div>
 
+
             <div class="timeline-item">
 
                 <div class="timeline-year">
@@ -966,6 +1048,7 @@
                 </p>
 
             </div>
+
 
             <div class="timeline-item">
 
@@ -987,6 +1070,7 @@
         </div>
 
     </section>
+
 
     <!-- CONTACT -->
 
@@ -1019,14 +1103,18 @@
                     LINKEDIN
                 </a>
 
-                <!-- NEW VIEW RESUME -->
-                <a href="Pavan_Sai_Resume.pdf"
+                <!-- VIEW RESUME -->
+
+                <a href="resume.pdf"
+                   class="resume-contact"
                    target="_blank">
                     VIEW RESUME ↗
                 </a>
 
-                <!-- NEW DOWNLOAD RESUME -->
-                <a href="Pavan_Sai_Resume.pdf"
+                <!-- DOWNLOAD RESUME -->
+
+                <a href="resume.pdf"
+                   class="resume-contact"
                    download>
                     DOWNLOAD RESUME ↓
                 </a>
@@ -1036,6 +1124,7 @@
         </div>
 
     </section>
+
 
     <!-- FOOTER -->
 
@@ -1051,9 +1140,12 @@
 
     </footer>
 
+
     <!-- JAVASCRIPT -->
 
     <script>
+
+        /* MOUSE GLOW */
 
         const cursor = document.querySelector(".cursor");
 
@@ -1064,13 +1156,17 @@
 
         });
 
+
+        /* SCROLL REVEAL */
+
         const reveals = document.querySelectorAll(".reveal");
 
         function revealOnScroll() {
 
             reveals.forEach(function (element) {
 
-                const windowHeight = window.innerHeight;
+                const windowHeight =
+                    window.innerHeight;
 
                 const elementTop =
                     element.getBoundingClientRect().top;
@@ -1092,9 +1188,13 @@
 
         revealOnScroll();
 
+
+        /* NAVBAR */
+
         window.addEventListener("scroll", function () {
 
-            const nav = document.querySelector("nav");
+            const nav =
+                document.querySelector("nav");
 
             if (window.scrollY > 100) {
 
