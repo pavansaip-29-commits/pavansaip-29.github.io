@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,8 +10,8 @@
 
     <style>
         /* =========================
-   RESET
-========================= */
+           RESET
+        ========================= */
 
         * {
             margin: 0;
@@ -30,8 +31,8 @@
         }
 
         /* =========================
-   CUSTOM CURSOR GLOW
-========================= */
+           CUSTOM CURSOR GLOW
+        ========================= */
 
         .cursor {
             position: fixed;
@@ -46,8 +47,8 @@
         }
 
         /* =========================
-   NOISE BACKGROUND
-========================= */
+           NOISE BACKGROUND
+        ========================= */
 
         body::before {
             content: "";
@@ -56,13 +57,12 @@
             pointer-events: none;
             opacity: 0.04;
             z-index: 999;
-            background-image:
-                url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.8'/%3E%3C/svg%3E");
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.8'/%3E%3C/svg%3E");
         }
 
         /* =========================
-   NAVBAR
-========================= */
+           NAVBAR
+        ========================= */
 
         nav {
             position: fixed;
@@ -116,8 +116,8 @@
         }
 
         /* =========================
-   HERO
-========================= */
+           HERO
+        ========================= */
 
         .hero {
             min-height: 100vh;
@@ -165,6 +165,7 @@
             display: flex;
             gap: 15px;
             margin-top: 35px;
+            flex-wrap: wrap;
         }
 
         .btn {
@@ -194,8 +195,8 @@
         }
 
         /* =========================
-   PROFILE CARD
-========================= */
+           PROFILE CARD
+        ========================= */
 
         .profile-card {
             position: relative;
@@ -246,8 +247,8 @@
         }
 
         /* =========================
-   MARQUEE
-========================= */
+           MARQUEE
+        ========================= */
 
         .marquee {
             overflow: hidden;
@@ -267,7 +268,6 @@
         }
 
         @keyframes marquee {
-
             from {
                 transform: translateX(0);
             }
@@ -275,12 +275,11 @@
             to {
                 transform: translateX(-50%);
             }
-
         }
 
         /* =========================
-   SECTIONS
-========================= */
+           SECTIONS
+        ========================= */
 
         section:not(.hero) {
             max-width: 1250px;
@@ -304,8 +303,8 @@
         }
 
         /* =========================
-   ABOUT
-========================= */
+           ABOUT
+        ========================= */
 
         .about-grid {
             display: grid;
@@ -336,8 +335,8 @@
         }
 
         /* =========================
-   SKILLS
-========================= */
+           SKILLS
+        ========================= */
 
         .skills-grid {
             display: grid;
@@ -369,8 +368,8 @@
         }
 
         /* =========================
-   PROJECTS
-========================= */
+           PROJECTS
+        ========================= */
 
         .projects {
             background: #111;
@@ -421,8 +420,8 @@
         }
 
         /* =========================
-   EXPERIENCE / TIMELINE
-========================= */
+           EXPERIENCE / TIMELINE
+        ========================= */
 
         .timeline {
             border-left: 2px solid #333;
@@ -463,17 +462,19 @@
         }
 
         /* =========================
-   CONTACT
-========================= */
+           CONTACT
+        ========================= */
 
         .contact-box {
             border: 1px solid #333;
             padding: 60px;
 
             background:
-                linear-gradient(135deg,
+                linear-gradient(
+                    135deg,
                     rgba(255, 220, 0, .08),
-                    transparent);
+                    transparent
+                );
         }
 
         .contact-box h2 {
@@ -507,8 +508,8 @@
         }
 
         /* =========================
-   FOOTER
-========================= */
+           FOOTER
+        ========================= */
 
         footer {
             border-top: 1px solid #333;
@@ -528,8 +529,8 @@
         }
 
         /* =========================
-   REVEAL ANIMATION
-========================= */
+           REVEAL ANIMATION
+        ========================= */
 
         .reveal {
             opacity: 0;
@@ -543,8 +544,8 @@
         }
 
         /* =========================
-   MOBILE
-========================= */
+           MOBILE
+        ========================= */
 
         @media(max-width: 850px) {
 
@@ -586,7 +587,6 @@
                 grid-column: 2;
                 width: max-content;
             }
-
         }
 
         @media(max-width: 500px) {
@@ -628,7 +628,6 @@
                 flex-direction: column;
                 gap: 10px;
             }
-
         }
     </style>
 </head>
@@ -638,8 +637,8 @@
     <div class="cursor"></div>
 
     <!-- =========================
-     NAVIGATION
-========================= -->
+         NAVIGATION
+    ========================= -->
 
     <nav>
 
@@ -673,10 +672,9 @@
 
     </nav>
 
-
     <!-- =========================
-     HERO
-========================= -->
+         HERO
+    ========================= -->
 
     <header class="hero" id="home">
 
@@ -692,16 +690,19 @@
             </h1>
 
             <p class="hero-description">
-
                 I build digital experiences, explore technology,
                 and turn ideas into real-world projects.
-
             </p>
 
             <div class="buttons">
 
                 <a href="#projects" class="btn">
                     VIEW WORK
+                </a>
+
+                <!-- RESUME BUTTON -->
+                <a href="Pavan_Sai_Resume.pdf" class="btn" target="_blank">
+                    RESUME ↗
                 </a>
 
                 <a href="#contact" class="btn dark">
@@ -711,7 +712,6 @@
             </div>
 
         </div>
-
 
         <div class="profile-card">
 
@@ -735,10 +735,9 @@
 
     </header>
 
-
     <!-- =========================
-     MARQUEE
-========================= -->
+         MARQUEE
+    ========================= -->
 
     <div class="marquee">
 
@@ -754,10 +753,9 @@
 
     </div>
 
-
     <!-- =========================
-     ABOUT
-========================= -->
+         ABOUT
+    ========================= -->
 
     <section id="about" class="reveal">
 
@@ -787,7 +785,6 @@
 
             </div>
 
-
             <div class="about-card">
 
                 <h3>
@@ -806,10 +803,9 @@
 
     </section>
 
-
     <!-- =========================
-     SKILLS
-========================= -->
+         SKILLS
+    ========================= -->
 
     <section id="skills" class="reveal">
 
@@ -836,7 +832,6 @@
 
             </div>
 
-
             <div class="skill">
 
                 <div class="skill-number">
@@ -848,7 +843,6 @@
                 </h3>
 
             </div>
-
 
             <div class="skill">
 
@@ -862,7 +856,6 @@
 
             </div>
 
-
             <div class="skill">
 
                 <div class="skill-number">
@@ -875,7 +868,6 @@
 
             </div>
 
-
             <div class="skill">
 
                 <div class="skill-number">
@@ -887,7 +879,6 @@
                 </h3>
 
             </div>
-
 
             <div class="skill">
 
@@ -905,10 +896,9 @@
 
     </section>
 
-
     <!-- =========================
-     PROJECTS
-========================= -->
+         PROJECTS
+    ========================= -->
 
     <section id="projects" class="projects reveal">
 
@@ -920,7 +910,6 @@
             SELECTED<br>
             <span style="color:#ffdc00">WORK.</span>
         </h2>
-
 
         <div class="project">
 
@@ -947,7 +936,6 @@
 
         </div>
 
-
         <div class="project">
 
             <div class="project-number">
@@ -973,7 +961,6 @@
 
         </div>
 
-
         <div class="project">
 
             <div class="project-number">
@@ -998,7 +985,6 @@
             </a>
 
         </div>
-
 
         <div class="project">
 
@@ -1027,10 +1013,9 @@
 
     </section>
 
-
     <!-- =========================
-     JOURNEY
-========================= -->
+         JOURNEY
+    ========================= -->
 
     <section id="experience" class="reveal">
 
@@ -1042,7 +1027,6 @@
             MY<br>
             <span style="color:#ffdc00">JOURNEY.</span>
         </h2>
-
 
         <div class="timeline">
 
@@ -1064,7 +1048,6 @@
 
             </div>
 
-
             <div class="timeline-item">
 
                 <div class="timeline-year">
@@ -1081,7 +1064,6 @@
                 </p>
 
             </div>
-
 
             <div class="timeline-item">
 
@@ -1104,10 +1086,9 @@
 
     </section>
 
-
     <!-- =========================
-     CONTACT
-========================= -->
+         CONTACT
+    ========================= -->
 
     <section id="contact" class="reveal">
 
@@ -1136,16 +1117,20 @@
                     LINKEDIN
                 </a>
 
+                <!-- RESUME DOWNLOAD -->
+                <a href="Pavan_Sai_Resume.pdf" download>
+                    DOWNLOAD RESUME ↓
+                </a>
+
             </div>
 
         </div>
 
     </section>
 
-
     <!-- =========================
-     FOOTER
-========================= -->
+         FOOTER
+    ========================= -->
 
     <footer>
 
@@ -1159,10 +1144,9 @@
 
     </footer>
 
-
     <!-- =========================
-     JAVASCRIPT
-========================= -->
+         JAVASCRIPT
+    ========================= -->
 
     <script>
 
@@ -1179,7 +1163,6 @@
 
         });
 
-
         /* =========================
            SCROLL REVEAL
         ========================= */
@@ -1190,8 +1173,7 @@
 
             reveals.forEach(function (element) {
 
-                const windowHeight =
-                    window.innerHeight;
+                const windowHeight = window.innerHeight;
 
                 const elementTop =
                     element.getBoundingClientRect().top;
@@ -1212,7 +1194,6 @@
         );
 
         revealOnScroll();
-
 
         /* =========================
            NAVBAR ACTIVE EFFECT
@@ -1239,3 +1220,4 @@
 </body>
 
 </html>
+```
